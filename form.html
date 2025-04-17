@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+  <form method="post" id="formTeste" action="mailto:contato@gmail.com">
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <label form="formNome">Nome:</label>
+      <input id="formNome" type="text" name="nome" size="50">
+      <label form="formSigno">Signo:</label>
+      <input id="formSigno" type="text" name="signo" size="50">
+      
+    </fieldset>
+
+
+
+
+  </br></br>
+<fieldset>
+<legend>Região</legend>
+<p>Selecione a sua região:</p> 
+  <input id="forZn" type="radio" name="região" value="zn">
+  <label for="forZn">Zona Norte<label>
+  </br>
+  <input id="forZo" type="radio" name="região" value="zo">
+  <label for="forZo">Zona Oeste</label>
+  </br>
+<input id="forZl" type="radio" name="região" value="zl">
+<label for="forZl">Zona Leste</label>
+</br>
+<input id="forZs" type="radio" name="região" value="zs">
+<label for="forZs">Zona Sul</label>
+</fieldset>
+  
+
+</br></br>
+<fieldset>
+<legend>Transporte</legend>
+<p>Quais são os meios de transporte que você utiliza:</p>
+<input id="forOni" type="checkbox" name="Transporte" value="Onibûs">
+<label for="forOni"> Onibûs </label>
+</br>
+<input id="forUber" type="checkbox" name="Transporte" value="Uber">
+<label for="forUber"> Uber </label>
+</br>
+<input id="forMêtro" type="checkbox" name="Transporte" value="Mêtro">
+<label for="forMêtro"> Mêtro </label>
+</br>
+<input id="forJet" type="checkbox" name="Transporte" value="Jetpack">
+<label for="forJet"> Jetpack </label>
+
+</fieldset>
+
+<fieldset>
+<legend>Time</legend>
+</br></br>
+<label for="time">Selecione seu time:</label> 
+<select id="time" name="time">
+<option value="nenhum">Nenhum</option>
+<option value="Flamengo">Flamengo</option>
+<option value="Corinthians">Corinthians</option>
+<option value="Palmeiras">Palmeiras</option>
+<option value="BotaFogo">BotaFogo</option>
+<option value="Santos">Santos</option>
+<option value="Vasco">Vasco</option>
+</select>
+
+</fieldset>
+
+<fieldset>
+<legend>Marcas</legend>
+</br></br>
+<label for="forMarcas">Escolha a sua marca:</label>
+<input id="forMarcas" name="marca" list="marca" placeholder="Digite a sua marca">
+<datalist id="marca">
+    <option value="Adidas"></option>
+    <option value="Nike"></option>
+    <option value="Supreme"></option>
+    <option value="Off-White"></option>
+    <option value="Lacoste"></option>
+    <option value="Vans"></option>
+</datalist>
+
+</fieldset>
+
+<br><br/>
+
+<fieldset>
+<legend>Mensagem</legend>
+<p>Sugestões, elogios e críticas</p>
+<textarea name="mensagem" rows="10" cols="50" placeholder="Deixe sua mensagem aqui"
+required></textarea>
+
+<br><br/>
+
+</fieldset>
+
+
+<fieldset>
+<legend>Enviar</legend>
+<input type="submit" value="Enviar">
+
+</fieldset>
+
+</form>  
+</body>
+</html>
